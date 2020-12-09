@@ -1,10 +1,20 @@
 const fs = require('fs')
+const day8One = require('./day-8/one')
+const day8Two = require('./day-8/two')
 const day9One = require('./day-9/one')
 const day9Two = require('./day-9/two')
 
 // DAY 8
+fs.readFile('day-8/input.txt', (err, data) => {
+    if (err) throw err
+    const input = data.toString()
 
+    const solutionOne = day8One(input)
+    console.log('Solution day 8 - Part One:', solutionOne)
 
+    const solutionTwo = day8Two(input)
+    console.log('Solution day 8 - Part two:', solutionTwo)
+})
 
 // DAY 9
 fs.readFile('day-9/input.txt', (err, data) => {

@@ -1,5 +1,4 @@
 const _ = require('lodash')
-const fs = require('fs')
 
 const two = (input) => {
     const instructions = input.split('\n').map((element) => {
@@ -51,10 +50,5 @@ const runCode = (instructions) => {
         return undefined
     }
 }
-
-fs.readFile('day-8/input.txt', (err, data) => {
-    if (err) throw err
-    console.log(two(data.toString()))
-})
 
 module.exports = two
