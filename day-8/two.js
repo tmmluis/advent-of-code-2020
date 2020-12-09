@@ -53,8 +53,8 @@ const runCode = (instructions) => {
 }
 
 fs.readFile('day-8/input.txt', (err, data) => {
-    if (err) throw err;
-    console.log(two(data.toString()));
-});
+    if (err) throw err
+    console.log(two(data.toString()))
+})
 
 module.exports = two
