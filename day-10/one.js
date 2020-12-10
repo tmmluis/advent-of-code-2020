@@ -2,7 +2,8 @@ const one = (input) => {
     // Parse input data to an ordered array of integers
     const adapters = input.split('\n').map(adapter => parseInt(adapter, 10)).sort((a, b) => a - b)
     
-    // Adding the 'joltage' of the charging outlet (0) and my device (3 higher than the highest-rated adapter)
+    // Adding the 'joltage' of the charging outlet (0) to the first position
+    // and my device's (3 higher than the highest-rated adapter) to the last position.
     adapters.unshift(0)
     adapters.push(adapters[adapters.length - 1] + 3)
     

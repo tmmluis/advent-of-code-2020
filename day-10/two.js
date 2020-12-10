@@ -1,25 +1,25 @@
-const _ = require('lodash')
+const two = (input) => {
+    // Parse input data to an ordered array of integers
+    const adapters = input.split('\n').map(adapter => parseInt(adapter, 10)).sort((a, b) => a - b)
+    
+    // Adding the 'joltage' of the charging outlet (0) to the first position
+    // and my device's (3 higher than the highest-rated adapter) to the last position.
+    adapters.unshift(0)
+    adapters.push(adapters[adapters.length - 1] + 3)
 
-const two = (input, target) => {
-    const data = input.split('\n').map(number => parseInt(number, 10))
-    let set = []
+    let ones = 0
+    let twos = 0
+    let threes = 0
 
-    for (let i = 0; i < data.length; i++) {
-        set.push(data[i])
+    for (let i = 0; i < adapters.length - 1; i++) {
+        let difference = adapters[i + 1] - adapters[i]
 
-        if (set.length > 1) {
-            let sum = set.reduce((accumulator, current) => accumulator + current)
-
-            while (sum > target) {
-                set = set.slice(1)
-                sum = set.reduce((accumulator, current) => accumulator + current)
-            }
-
-            if (sum === target) {
-                return _.min(set) + _.max(set)
-            }
-        }
+        if (difference === 1) ones++
+        if (difference === 2) twos++
+        if (difference === 3) threes++
     }
+
+    return ones * 2 + twos * 1
 }
 
 module.exports = two
