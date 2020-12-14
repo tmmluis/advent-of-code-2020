@@ -1,6 +1,6 @@
 const assert = require('assert')
 const one = require('./one')
-const two = require('./two')
+const {two, countCombinations} = require('./two')
 
 describe('Day 10', () => {
   it('Part one (a) should be equal to 35', () => {
@@ -50,6 +50,10 @@ describe('Day 10', () => {
 10
 3`
     assert.strictEqual(one(input), 220)
+  })
+  it('Part two - countCombinations should be equal to 5', () => {
+    const input = [0, 1, 3, 4, 6, 9]
+    assert.strictEqual(countCombinations(input), 5)
   })
   it('Part two (a) should be equal to 8', () => {
     const input = `16
