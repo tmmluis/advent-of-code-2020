@@ -1,5 +1,3 @@
-const { rangeRight } = require("lodash")
-
 const two = (input) => {
     // Parse input data to an ordered array of integers
     const adapters = input.split('\n').map(adapter => parseInt(adapter, 10)).sort((a, b) => a - b)
