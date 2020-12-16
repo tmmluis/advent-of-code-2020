@@ -11,6 +11,8 @@ const { two: day10Two } = require('./day-10/two')
 const day15One = require('./day-15/one')
 const day15Two = require('./day-15/two')
 
+const day16One = require('./day-16/one')
+
 
 // DAY 8
 fs.readFile('day-8/input.txt', (err, data) => {
@@ -29,7 +31,7 @@ fs.readFile('day-9/input.txt', (err, data) => {
     if (err) throw err
     const input = data.toString()
 
-    const solutionOne = day9One(data.toString(), 25)
+    const solutionOne = day9One(input, 25)
     console.log('Solution day 9 - Part one:', solutionOne)
 
     const solutionTwo = day9Two(input, solutionOne)
@@ -41,7 +43,7 @@ fs.readFile('day-10/input.txt', (err, data) => {
     if (err) throw err
     const input = data.toString()
 
-    const solutionOne = day10One(data.toString())
+    const solutionOne = day10One(input)
     console.log('Solution day 10 - Part one:', solutionOne)
 
     const solutionTwo = day10Two(input)
@@ -50,9 +52,17 @@ fs.readFile('day-10/input.txt', (err, data) => {
 
 // DAY 15
 const input = [2, 15, 0, 9, 1, 20]
-
 const solutionOne = day15One(input)
 console.log('Solution day 15 - Part one:', solutionOne)
 
-const solutionTwo = day15Two(input)
-console.log('Solution day 15 - Part two:', solutionTwo)
+// const solutionTwo = day15Two(input)
+// console.log('Solution day 15 - Part two:', solutionTwo)
+
+// DAY 16
+fs.readFile('day-16/input.txt', (err, data) => {
+    if (err) throw err
+    const input = data.toString()
+
+    const solutionOne = day16One(input)
+    console.log('Solution day 16 - Part one:', solutionOne)
+})

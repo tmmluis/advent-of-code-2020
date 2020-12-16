@@ -38,10 +38,10 @@ describe('Day 15', () => {
     const input = [2,1,3]
     assert.strictEqual(two(input, 2020), 10)
   })
-  it('Part two (c) should be equal to 175594', () => {
-    const input = [0,3,6]
-    assert.strictEqual(two(input), 175594)
-  })
+  // it('Part two (c) should be equal to 175594', () => {
+  //   const input = [0,3,6]
+  //   assert.strictEqual(two(input), 175594)
+  // })
   // it('Part two (d) should be equal to 6895259', () => {
   //   const input = [2,3,1]
   //   assert.strictEqual(two(input), 6895259)
