@@ -13,10 +13,12 @@ Each puzzle is divided in two parts. The second part is unlocked when you finish
 
 To download and run this repository:
 
-> git clone https://github.com/tmmluis/advent-of-code-2020.git
-> npm install
-> npm start
+```git clone https://github.com/tmmluis/advent-of-code-2020.git
+npm install
+npm start
+```
 
 Each puzzle has its own set of tests (I am using [Mocha](https://github.com/mochajs/mocha)). You can run them by typing:
 
-> npm test
+```npm test
+```
