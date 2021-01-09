@@ -1,16 +1,18 @@
 const fs = require('fs')
 
-const day1One = require('./day-1/one')
-const day1Two = require('./day-1/two')
+const day1One = require('./day-01/one')
+const day1Two = require('./day-01/two')
 
-const day2One = require('./day-2/one')
-const day2Two = require('./day-2/two')
+const day2One = require('./day-02/one')
+const day2Two = require('./day-02/two')
 
-const day8One = require('./day-8/one')
-const day8Two = require('./day-8/two')
+const day3One = require('./day-03/one')
 
-const day9One = require('./day-9/one')
-const day9Two = require('./day-9/two')
+const day8One = require('./day-08/one')
+const day8Two = require('./day-08/two')
+
+const day9One = require('./day-09/one')
+const day9Two = require('./day-09/two')
 
 const day10One = require('./day-10/one')
 const { two: day10Two } = require('./day-10/two')
@@ -26,37 +28,45 @@ const day17Two = require('./day-17/two')
 const day19One = require('./day-19/one')
 
 // DAY 1
-fs.readFile('day-1/input.txt', (err, data) => {
+fs.readFile('day-01/input.txt', (err, data) => {
     if (err) throw err
     const input = data.toString()
 
-    console.log('Solution day 1 - Part One:', day1One(input))
-    console.log('Solution day 1 - Part Two:', day1Two(input))
+    console.log('Solution day 01 - Part One:', day1One(input))
+    console.log('Solution day 01 - Part Two:', day1Two(input))
 })
 
 // DAY 2
-fs.readFile('day-2/input.txt', (err, data) => {
+fs.readFile('day-02/input.txt', (err, data) => {
     if (err) throw err
     const input = data.toString()
 
-    console.log('Solution day 2 - Part One:', day2One(input))
-    console.log('Solution day 2 - Part Two:', day2Two(input))
+    console.log('Solution day 02 - Part One:', day2One(input))
+    console.log('Solution day 02 - Part Two:', day2Two(input))
+})
+
+// DAY 3
+fs.readFile('day-03/input.txt', (err, data) => {
+    if (err) throw err
+    const input = data.toString()
+
+    console.log('Solution day 03 - Part One:', day3One(input))
 })
 
 // DAY 8
-fs.readFile('day-8/input.txt', (err, data) => {
+fs.readFile('day-08/input.txt', (err, data) => {
     if (err) throw err
     const input = data.toString()
 
     const solutionOne = day8One(input)
-    console.log('Solution day 8 - Part One:', solutionOne)
+    console.log('Solution day 08 - Part One:', solutionOne)
 
     const solutionTwo = day8Two(input)
     console.log('Solution day 8 - Part two:', solutionTwo)
 })
 
 // DAY 9
-fs.readFile('day-9/input.txt', (err, data) => {
+fs.readFile('day-09/input.txt', (err, data) => {
     if (err) throw err
     const input = data.toString()
 
