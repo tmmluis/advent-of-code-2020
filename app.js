@@ -7,6 +7,7 @@ const day2One = require('./day-02/one')
 const day2Two = require('./day-02/two')
 
 const day3One = require('./day-03/one')
+const day3Two = require('./day-03/two')
 
 const day8One = require('./day-08/one')
 const day8Two = require('./day-08/two')
@@ -51,6 +52,7 @@ fs.readFile('day-03/input.txt', (err, data) => {
     const input = data.toString()
 
     console.log('Solution day 03 - Part One:', day3One(input))
+    console.log('Solution day 03 - Part Two:', day3Two(input))
 })
 
 // DAY 8
