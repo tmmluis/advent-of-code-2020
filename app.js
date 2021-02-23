@@ -1,17 +1,5 @@
 const fs = require('fs')
 
-const day1One = require('./day-01/one')
-const day1Two = require('./day-01/two')
-
-const day2One = require('./day-02/one')
-const day2Two = require('./day-02/two')
-
-const day3One = require('./day-03/one')
-const day3Two = require('./day-03/two')
-
-const day4One = require('./day-04/one')
-const day4Two = require('./day-04/two')
-
 const day8One = require('./day-08/one')
 const day8Two = require('./day-08/two')
 
@@ -30,42 +18,6 @@ const day17One = require('./day-17/one')
 const day17Two = require('./day-17/two')
 
 const day19One = require('./day-19/one')
-
-// DAY 1
-fs.readFile('day-01/input.txt', (err, data) => {
-    if (err) throw err
-    const input = data.toString()
-
-    console.log('Solution day 01 - Part One:', day1One(input))
-    console.log('Solution day 01 - Part Two:', day1Two(input))
-})
-
-// DAY 2
-fs.readFile('day-02/input.txt', (err, data) => {
-    if (err) throw err
-    const input = data.toString()
-
-    console.log('Solution day 02 - Part One:', day2One(input))
-    console.log('Solution day 02 - Part Two:', day2Two(input))
-})
-
-// DAY 3
-fs.readFile('day-03/input.txt', (err, data) => {
-    if (err) throw err
-    const input = data.toString()
-
-    console.log('Solution day 03 - Part One:', day3One(input))
-    console.log('Solution day 03 - Part Two:', day3Two(input))
-})
-
-// DAY 4
-fs.readFile('day-04/input.txt', (err, data) => {
-    if (err) throw err
-    const input = data.toString()
-
-    console.log('Solution day 04 - Part One:', day4One(input))
-    console.log('Solution day 04 - Part Two:', day4Two(input))
-})
 
 // DAY 8
 fs.readFile('day-08/input.txt', (err, data) => {
