@@ -1,5 +1,3 @@
-const { get } = require("lodash")
-
 const one = (input) => {
   const rules = input.split(/\r?\n/)
   const bags = new Map()

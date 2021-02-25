@@ -3,6 +3,8 @@ This is my attemp at solving 2020's edition of advent of code. My solutions are 
 
 :loudspeaker: I am currently looking for a job! Connect with me on [LinkedIn](https://www.linkedin.com/in/tmmluis/).
 
+Current status: 26:star: (out of 50)
+
 ## What is Advent of Code
 [Advent of Code](https://adventofcode.com) is an Advent calendar of small programming puzzles created by [Eric Wastl](https://github.com/topaz).
 Each day, starting on December 1st, a puzzle is released which you can solve using any programming language you like and will test a variety of skill sets and skill levels.
