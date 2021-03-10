@@ -3,7 +3,7 @@ This is my attemp at solving 2020's edition of advent of code. My solutions are 
 
 :loudspeaker: I am currently looking for a job! Connect with me on [LinkedIn](https://www.linkedin.com/in/tmmluis/).
 
-Current status: 26:star: (out of 50)
+Current status: 28:star: (out of 50)
 
 ## What is Advent of Code
 [Advent of Code](https://adventofcode.com) is an Advent calendar of small programming puzzles created by [Eric Wastl](https://github.com/topaz).

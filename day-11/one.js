@@ -1,7 +1,5 @@
 const one = (input) => {
   let seats = input.split(/\r?\n/).map(row => row.split(''))
-  const maxRounds = 6
-  let currentRound = 0
   let changes = 0
 
   do {
@@ -12,6 +10,9 @@ const one = (input) => {
     for (let row = 0; row < seats.length; row++) {
       for (let column = 0; column < seats[row].length; column++) {
         let seat = seats[row][column]
+
+        if (seat === '.') continue
+
         let adjacent = getAdjacent(seats, row, column)
         let adjacentOccupied = adjacent.match(/#/g)
 
@@ -25,7 +26,6 @@ const one = (input) => {
       }
     }
     seats = newSeats
-    currentRound++
   } while (changes !== 0)
 
   let occupied = 0
