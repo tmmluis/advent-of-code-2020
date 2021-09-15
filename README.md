@@ -1,7 +1,7 @@
 # Advent of code 2020 :santa: :christmas_tree:
 This is my attemp at solving 2020's edition of advent of code. My solutions are written in **JavaScript** running on Node.js.
 
-:loudspeaker: I am currently looking for a job! Connect with me on [LinkedIn](https://www.linkedin.com/in/tmmluis/).
+:loudspeaker: Connect with me on [LinkedIn](https://www.linkedin.com/in/tmmluis/).
 
 Current status: 28:star: (out of 50)
 
